@@ -12,9 +12,10 @@
 		<title>Proyecto web</title>
 	</head>
 	<body>
+		<!-- start menu -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="principal.html">Navbar</a>
+				<a class="navbar-brand" href="principal.html">Peaje Buena vista!</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -68,9 +69,225 @@
 				</div>
 			</div>
 		</nav>
+		<!-- end menu -->
 		<div class="container-fluid">
-			<h1 class="text-center py-5">Peaje... Buenavista!</h1>
+			<h1 class="text-center py-5">Peaje Buena vista!</h1>
 		</div>
+		<!-- start principal form -->
+		<div class="container">
+			<main>
+				<div class="py-5 text-center">
+					<h2>Formulario principal</h2>
+					<p class="lead">
+						Aquí podra diligenciar el formulario para poder pasar.
+						<br />Gracias!
+					</p>
+				</div>
+
+				<div class="row g-5">
+					<div class="col-md-5 col-lg-4 order-md-last">
+						<h4 class="d-flex justify-content-between align-items-center mb-3">
+							<span class="text-primary">Resultados</span>
+						</h4>
+						<table id="example" class="table table-striped" >
+						<thead>
+								<tr>
+										<th>Name</th>
+										<th>Position</th>
+										<th>Office</th>
+										<th>Age</th>
+										<th>Start date</th>
+										<th>Salary</th>
+								</tr>
+						</thead>
+						<tbody>
+								<tr>
+										<td>Tiger Nixon</td>
+										<td>System Architect</td>
+										<td>Edinburgh</td>
+										<td>61</td>
+										<td>2011/04/25</td>
+										<td>$320,800</td>
+								</tr>
+								<tr>
+										<td>Garrett Winters</td>
+										<td>Accountant</td>
+										<td>Tokyo</td>
+										<td>63</td>
+										<td>2011/07/25</td>
+										<td>$170,750</td>
+								</tr>
+								<tr>
+										<td>Ashton Cox</td>
+										<td>Junior Technical Author</td>
+										<td>San Francisco</td>
+										<td>66</td>
+										<td>2009/01/12</td>
+										<td>$86,000</td>
+								</tr>
+								<tr>
+										<td>Cedric Kelly</td>
+										<td>Senior Javascript Developer</td>
+										<td>Edinburgh</td>
+										<td>22</td>
+										<td>2012/03/29</td>
+										<td>$433,060</td>
+								</tr>
+								<tr>
+										<td>Airi Satou</td>
+										<td>Accountant</td>
+										<td>Tokyo</td>
+										<td>33</td>
+										<td>2008/11/28</td>
+										<td>$162,700</td>
+								</tr>
+								
+						</tbody>
+						<tfoot>
+								<tr>
+										<th>Name</th>
+										<th>Position</th>
+										<th>Office</th>
+										<th>Age</th>
+										<th>Start date</th>
+										<th>Salary</th>
+								</tr>
+						</tfoot>
+				</table>
+						
+
+					</div>
+					<div class="col-md-7 col-lg-8">
+						<h4 class="mb-3">Peaje</h4>
+						<form class="needs-validation" novalidate>
+							<div class="row g-3">
+								<div class="col-sm-6">
+									<label for="firstName" class="form-label"
+										>Nombre del peaje</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="firstName"
+										placeholder=""
+										value=""
+										required
+									/>
+								</div>
+
+								<div class="col-sm-6">
+									<label for="lastName" class="form-label">Cajero</label>
+									<input
+										type="text"
+										class="form-control"
+										id="lastName"
+										placeholder=""
+										value=""
+										required
+									/>
+								</div>
+								
+								<div class="col-sm-6">
+									<label for="fecha" class="form-label"
+										>Fecha</label
+									>
+									<input
+										type="date"
+										class="form-control"
+										id="firstName"
+										placeholder=""
+										value=""
+										required
+									/>
+								</div>
+
+								<div class="col-sm-6">
+									<label for="lastName" class="form-label">Hora</label>
+									<input
+										type="datetime"
+										class="form-control"
+										id="lastName"
+										placeholder=""
+										value=""
+										required
+									/>
+								</div>
+
+								<!-- <div class="col-12">
+									<label for="date" class="form-label">Fecha</label>
+									<input
+										type="date"
+										class="form-control"
+										id="date"
+										placeholder=""
+									/>
+								</div>
+
+								<div class="col-sm-6">
+									<label for="lastName" class="form-label">Hora</label>
+									<input
+										type="text"
+										class="form-control"
+										id="lastName"
+										placeholder=""
+										value=""
+										required
+									/>
+								</div> -->
+
+							<hr class="my-4" />
+
+							<div class="col-sm-6">
+									<label for="lastName" class="form-label">Placa</label>
+									<input
+										type="text"
+										class="form-control"
+										id="lastName"
+										placeholder=""
+										value=""
+										required
+									/>
+								</div>
+
+								<div class="col-sm-6" style="padding: 26px;">
+									<button type="submit" class="btn btn-primary">Submit</button>
+
+								</div>
+
+							<hr class="my-4" />
+
+							<div class="row gy-3">
+								<div class="col-md-6">
+									<button type="submit" class="btn btn-primary">Reporte diario</button>
+									
+								</div>
+
+								<div class="col-md-6">
+									<button type="submit" class="btn btn-primary">Cerrar</button>
+
+								</div>
+
+							<hr class="my-4" />
+						</form>
+					</div>
+				</div>
+			</main>
+
+			<!-- start footer -->
+			<footer class="my-5 pt-5 text-muted text-center text-small">
+				<p class="mb-1">
+					&copy; 2021 Hecho por <br />
+					Jhan Kenny Cardenas Madera y Nestor Fabián González
+				</p>
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="#">Privacy</a></li>
+					<li class="list-inline-item"><a href="#">Terms</a></li>
+					<li class="list-inline-item"><a href="#">Support</a></li>
+				</ul>
+			</footer>
+			<!-- end footer -->
+		</div>
+		<!-- end principal form -->
 
 		<!-- Optional JavaScript; choose one of the two! -->
 
